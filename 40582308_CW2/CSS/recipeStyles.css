@@ -13,6 +13,7 @@
 }
 /*End - Header*/
 
+
 /*Navigation bar */
 nav ul {
   list-style: none;
@@ -47,6 +48,7 @@ nav a:hover {
 }
 /*End - Navigation bar */
 
+
 /*Body*/
 body {
   font-family: Arial;
@@ -55,20 +57,34 @@ body {
   background-color:#ffe6ff;
 }
 
-body {font-family: Arial;}
-* {box-sizing: border-box;}
-
 .container {
   border-radius: 5px;
   background-color: #e0e0eb;
   padding: 20px;
+   padding-top: 12px;
 }
 
 .book {
+ border-radius: 5px;
   column-count: 2;
-  column-gap: 90px;
+  column-gap: 20px;
+  background-color: #e0e0eb;
+   padding: 20px;
+   padding-top: 12px;
+ 
+}
+
+.quickImages {
+	height:200px; width:320px; padding-right:19px;
+	
+}
+
+.vegImages{
+	width:220px;
+	height:180px;
 }
 /*End - Body*/
+
 
 /*Footer*/
 footer {
@@ -76,15 +92,29 @@ footer {
   text-align: center;
   background: #006bb3;
   margin-top: 10px;
+   border-radius: 5px;
+   font-size:14px;
 }
 /*End - Footer*/
+
 
 /*Forms*/
 input[type=text], select, textarea {
   width: 100%;
   padding: 13px;
   border: 1px solid;
-  border-radius: 3px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-top: 8px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=tel], select, textarea {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid;
+  border-radius: 5px;
   box-sizing: border-box;
   margin-top: 8px;
   margin-bottom: 16px;
@@ -102,13 +132,13 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  background-color: #2eb82e;
+  background-color: #04AA6D;
 }
 
 button {
   background-color: #04AA6D;
   color: white;
-  padding: 14px 20px;
+  padding: 14px 14px;
   margin: 8px 0;
   border: none;
   cursor: pointer;
@@ -121,13 +151,14 @@ button:hover {
 }
 
 .cancelbtn {
-  padding: 14px 20px;
+  padding: 14px 14px;
   background-color: #f44336;
 }
 
 .cancelbtn, .singupbtn {
-  float: left;
-  width: 50%;
+  float: center;
+  width: 7%;
+  border-radius: 20px;
 }
 
 .clearfix::after {
@@ -137,7 +168,8 @@ button:hover {
 }
 /*End - Forms*/
 
-/* Buy the products here - stock, containers, boxes, reduction, cost, amount & addtobasket  */
+
+/* Buy the products here - stock, box-containers, boxes, reduction, cost, amount & addtobasket  */
 .stock .box-containers{
   display: flex;
   flex-wrap: wrap;
