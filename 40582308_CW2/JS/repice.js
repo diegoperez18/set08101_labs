@@ -139,3 +139,10 @@ function displayCalzones(myimage)
 {myimage.src="../pictures/calzone.png"}
 
 /*End-Vegan*/
+
+/*Buy products here*/
+function basketFunction(){
+  alert('The product was added to your basket!');
+}
+/*End- Buy products here*/
+

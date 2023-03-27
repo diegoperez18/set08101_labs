@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<script src="../JS/repice.js"></script>
 <title>Products</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -24,11 +25,11 @@
   <li><a href="signin.html">Sign in / Register</a></li>
 </ul>
 </nav>
-
-<main>
+<br>
+<main class="container" >
 <section class="stock" id="stock">
-          <BR>
-          <h3>Now we sell our own products:</h3>
+         
+          <h2>Now we sell our own products:</h2>
 
     <div class="box-containers">
 
@@ -36,13 +37,13 @@
             <span class="reduction">-20%</span>           
             <img src="../pictures/redpeppers.png" alt="Error">
             <h3>Red peppers</h3>            
-            <div class="cost"> &#163;1.50 <span> &#163;3.50 </span> </div>
+            <div class="cost"> &#163;2.54 <span> &#163;3.50 </span> </div>
             <div class="amount">
                 <span>Amount</span>
                 <input type="number" min="1" max="9" value="1" >
                 <span> /kg </span>
             </div>
-            <a href="#" class="addtobasket">Add to basket</a>
+            <a href="#" onclick="basketFunction()" class="addtobasket">Add to basket</a>
         </div>
 
         <div class="boxes">                     
@@ -54,20 +55,20 @@
                 <input type="number" min="1" max="9" value="1">
                 <span> /kg </span>
             </div>
-            <a href="#" class="addtobasket">Add to basket</a>
+            <a href="#" onclick="basketFunction()" class="addtobasket">Add to basket</a>
         </div>
 
         <div class="boxes">
             <span class="reduction">-32%</span>          
             <img src="../pictures/pineapple.png" alt="Error">
             <h3>Pineapples</h3>
-            <div class="cost"> &#163;2.50 <span> &#163;5.20 </span> </div>
+            <div class="cost"> &#163;4.50 <span> &#163;5.20 </span> </div>
             <div class="amount">
                 <span>Amount</span>
                 <input type="number" min="1" max="9" value="1">
                 <span> /kg </span>
             </div>
-            <a href="#" class="addtobasket">Add to basket</a>
+            <a href="#" onclick="basketFunction()" class="addtobasket">Add to basket</a>
         </div>
 
         <div class="boxes">
@@ -79,23 +80,11 @@
                 <input type="number" min="1" max="9" value="1">
                 <span> /kg </span>
             </div>
-            <a href="#" class="addtobasket">Add to basket</a>
+            <a href="#" onclick="basketFunction()" class="addtobasket">Add to basket</a>
         </div>
 
-        <div class="boxes">          
-            <img src="../pictures/beef.png" alt="Error">
-            <h3>Beef</h3>
-            <div class="cost"> &#163;5.50 </div>
-            <div class="amount">
-                <span>Amount</span>
-                <input type="number" min="1" max="9" value="1">
-                <span> /kg </span>
-            </div>
-            <a href="#" class="addtobasket">Add to basket</a>
-        </div>
-
-        <div class="boxes">
-            <span class="reduction">-39%</span>
+		<div class="boxes">
+            <span class="reduction">-45%</span>
             <img src="../pictures/orange.png" alt="Error">
             <h3>Oranges</h3>
             <div class="cost"> &#163;3.90 <span> &#163;6.20 </span> </div>
@@ -104,9 +93,34 @@
                 <input type="number" min="1" max="9" value="1">
                 <span> /kg </span>
             </div>
-            <a href="#" class="addtobasket">Add to basket</a>
+            <a href="#" onclick="basketFunction()" class="addtobasket">Add to basket</a>
         </div>
-
+		
+        <div class="boxes">          
+            <img src="../pictures/beef.png" alt="Error">
+            <h3>Beef</h3>
+            <div class="cost"> &#163;7.50 </div>
+            <div class="amount">
+                <span>Amount</span>
+                <input type="number" min="1" max="9" value="1">
+                <span> /kg </span>
+            </div>
+            <a href="#" onclick="basketFunction()" class="addtobasket">Add to basket</a>
+        </div>
+		
+		<div class="boxes">
+            <span class="reduction">-39%</span>
+            <img src="../pictures/tuna.png" alt="Error">
+            <h3>Tuna</h3>
+            <div class="cost"> &#163;5.97 <span> &#163;8.20 </span> </div>
+            <div class="amount">
+                <span>Amount</span>
+                <input type="number" min="1" max="9" value="1">
+                <span> /kg </span>
+            </div>
+            <a href="#" onclick="basketFunction()" class="addtobasket">Add to basket</a>
+        </div>
+      
         <div class="boxes">           
             <img src="../pictures/potato.png" alt="Error">
             <h3>Potatoes</h3>
@@ -116,7 +130,7 @@
                 <input type="number" min="1" max="9" value="1">
                 <span> /kg </span>
             </div>
-            <a href="#" class="addtobasket">Add to basket</a>
+            <a href="#" onclick="basketFunction()" class="addtobasket">Add to basket</a>
         </div>
 
         <div class="boxes">
@@ -129,9 +143,11 @@
                 <input type="number" min="1" max="9" value="1">
                 <span> /kg </span>
             </div>
-            <a href="#" class="addtobasket">Add to basket</a>
+            <a href="#" onclick="basketFunction()" class="addtobasket">Add to basket</a>
         </div>
 				</div>
+				
+				
 		</section>
 </main>	
 	
